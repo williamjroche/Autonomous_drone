@@ -40,11 +40,9 @@ class IMU:
         
     
     def get_roll(self):
-        # Return current roll angle
         return self.roll
     
     def get_pitch(self):
-        # Return current pitch angle
         return self.pitch
     
     def test(self):
