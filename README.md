@@ -1,5 +1,5 @@
 # Autonomous Drone
-This is an Autonomous Drone that uses Computer vision to fly with radio transmission override. This GitHub repo has two main file systems, a flight controller file system and flight computer.
+This is an Autonomous Drone that uses Computer vision to fly with radio transmission override. This GitHub repo has two main file systems, a flight controller file system and flight computer. This is an ongoing project and the flight controller is currently in development.
 
 Flight Controller:
 - Connects to IMU and adjusts motor direction and speed for flight stability
