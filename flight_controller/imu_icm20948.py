@@ -1,9 +1,7 @@
 import qwiic_icm20948
 import time
-import sys
 from machine import Pin, I2C
 import math
-
 
 class IMU:
     def __init__(self):
@@ -11,7 +9,7 @@ class IMU:
         self.IMU = qwiic_icm20948.QwiicIcm20948()
 
         if self.IMU.connected == False:
-            raise Exception("IMU not connected!")
+            print("IMU not connected!")
     
         self.IMU.begin()
         print("IMU initialized successfully")
