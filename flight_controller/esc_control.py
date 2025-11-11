@@ -32,6 +32,17 @@ def esc_init():
     all_escs = [esc1, esc2, esc3, esc4]
 
 
+def esc_calibrate():
+    #Set all esc to min throttle
+    for esc in all_escs:
+        esc.duty_ns(min_throttle)
+    time.sleep(2)
+    #Set all esc to max throttle
+    for esc in all_escs:
+        esc.duty_ns(max_throttle)
+    time.sleep(2)
+
+
 def esc_arm():
     #Set all esc to min throttle
     for esc in all_escs:
