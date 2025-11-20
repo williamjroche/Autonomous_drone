@@ -1,3 +1,6 @@
+# MIT License
+# Created by: William Roche III
+# GitHub: @ williamjroche
 from machine import Pin, PWM
 import time
 
@@ -33,6 +36,10 @@ class ESCcontrol:
         #set all esc to max throttle
         for esc in self.all_escs:
             esc.duty_ns(self.max_throttle)
+        time.sleep(2)
+        #set all esc to min throttle
+        for esc in self.all_escs:
+            esc.duty_ns(self.min_throttle)
         time.sleep(2)
     
     def esc_arm(self):

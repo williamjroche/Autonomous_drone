@@ -1,3 +1,6 @@
+# MIT License
+# Created by: William Roche III
+# GitHub: @ williamjroche
 import qwiic_icm20948
 import time
 from machine import Pin, I2C
