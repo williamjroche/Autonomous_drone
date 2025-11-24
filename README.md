@@ -24,7 +24,7 @@ How to use:
 
 *This repo is best used as a guide for making your own custom autonomous drone, considering the implementation is very specific to the materials I am using*
 - All files in "Flight Controller" should be downloaded to a Raspberry Pi Pico running the latest micropython
-- Use GPIO pins listed in "esc_control.py" or change the values in the code to your needs
+- Use GPIO pins listed in "esc_control.py" and "controller_input.py" or change the values in the code to your needs
 - Ensure the BLDC motors that are next to each other rotate in different directions
 - [Directions for Flight Computer are a work in progress]
 
