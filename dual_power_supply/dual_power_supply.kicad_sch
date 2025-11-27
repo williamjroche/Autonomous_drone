@@ -1131,7 +1131,7 @@
 	)
 	(text "+5v"
 		(exclude_from_sim no)
-		(at 237.998 73.914 0)
+		(at 237.49 75.692 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1141,7 +1141,7 @@
 	)
 	(text "+3.3v"
 		(exclude_from_sim no)
-		(at 244.094 98.298 0)
+		(at 242.062 98.552 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1313,7 +1313,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 80.01) (xy 232.41 85.09)
+			(xy 232.41 81.28) (xy 232.41 85.09)
 		)
 		(stroke
 			(width 0)
@@ -1360,16 +1360,6 @@
 			(type default)
 		)
 		(uuid "13eb5d54-75b6-4ad2-afeb-b90f28d137e5")
-	)
-	(wire
-		(pts
-			(xy 232.41 85.09) (xy 220.98 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1f3c003d-c515-4721-9eb3-bffa62623dd5")
 	)
 	(wire
 		(pts
@@ -1533,7 +1523,7 @@
 	)
 	(wire
 		(pts
-			(xy 227.33 99.06) (xy 238.76 99.06)
+			(xy 227.33 99.06) (xy 236.22 99.06)
 		)
 		(stroke
 			(width 0)
@@ -1583,23 +1573,13 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 74.93) (xy 232.41 77.47)
+			(xy 232.41 74.93) (xy 232.41 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "741c5775-f2db-4294-ba84-2bff8987c9ed")
-	)
-	(wire
-		(pts
-			(xy 238.76 109.22) (xy 227.33 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75d01e87-b72c-46b4-aa79-0f04bfc25b63")
 	)
 	(wire
 		(pts
@@ -1613,7 +1593,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 104.14) (xy 238.76 109.22)
+			(xy 236.22 104.14) (xy 236.22 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1650,6 +1630,16 @@
 			(type default)
 		)
 		(uuid "85c94f58-8c5d-48b4-b1d3-ca358ccd4155")
+	)
+	(wire
+		(pts
+			(xy 220.98 85.09) (xy 232.41 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a2f86d3-a06c-4129-8b2a-7c19d0f79136")
 	)
 	(wire
 		(pts
@@ -1733,7 +1723,7 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 99.06) (xy 238.76 101.6)
+			(xy 236.22 99.06) (xy 236.22 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1850,6 +1840,16 @@
 			(type default)
 		)
 		(uuid "f694c687-8edc-4d41-b1a2-8c3a08ff8502")
+	)
+	(wire
+		(pts
+			(xy 227.33 109.22) (xy 236.22 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fad620c6-7b86-4313-a0f4-d60a49c0f75f")
 	)
 	(wire
 		(pts
@@ -2620,7 +2620,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 243.84 101.6 0)
+		(at 241.3 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2629,7 +2629,7 @@
 		(fields_autoplaced yes)
 		(uuid "5a114def-35b8-482d-bc37-6a3ee53aa9ea")
 		(property "Reference" "J3"
-			(at 246.38 101.5999 0)
+			(at 243.84 101.5999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2638,7 +2638,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 246.38 104.1399 0)
+			(at 243.84 104.1399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2647,7 +2647,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree"
-			(at 243.84 101.6 0)
+			(at 241.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2656,7 +2656,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 243.84 101.6 0)
+			(at 241.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2665,7 +2665,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 243.84 101.6 0)
+			(at 241.3 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2963,7 +2963,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Screw_Terminal_01x02")
-		(at 237.49 77.47 0)
+		(at 237.49 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2972,7 +2972,7 @@
 		(fields_autoplaced yes)
 		(uuid "baa69b6e-bf3a-4dc7-93eb-862846b797b7")
 		(property "Reference" "J2"
-			(at 240.03 77.4699 0)
+			(at 240.03 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2981,7 +2981,7 @@
 			)
 		)
 		(property "Value" "Screw_Terminal_01x02"
-			(at 240.03 80.0099 0)
+			(at 240.03 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2990,7 +2990,7 @@
 			)
 		)
 		(property "Footprint" "TerminalBlock_Altech:Altech_AK300_1x02_P5.00mm_45-Degree"
-			(at 237.49 77.47 0)
+			(at 237.49 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2999,7 +2999,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 77.47 0)
+			(at 237.49 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3008,7 +3008,7 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 237.49 77.47 0)
+			(at 237.49 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
