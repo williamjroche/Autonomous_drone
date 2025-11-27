@@ -51,7 +51,7 @@ class ESCcontrol:
         for esc in self.all_escs:
             esc.duty_ns(0)
     
-    def esc_speed(self, duty_select, motor_select):
+    def esc_speed(self, normalized, motor_select):
         #map motor_select cases to the motor objects
         motor_map = {
             1: [self.esc1],
@@ -60,6 +60,8 @@ class ESCcontrol:
             4: [self.esc4],
             5: self.all_escs
         }
+        duty_select = int((1500 + (500 * (normalized)))*1000)
+        
         #find the motors to control based on the selection
         motors_to_control = motor_map.get(motor_select)
         #error handling

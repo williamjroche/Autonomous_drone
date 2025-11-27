@@ -15,6 +15,10 @@ imu = IMU()
 esc.esc_arm()
 
 control = DroneController()
+yaw = control.get_yaw()
+control.print_values()
+pitch = control.get_pitch()
+roll = control.get_roll()
 
 #test motor
 #esc.esc_speed(1500000, 1)
@@ -25,5 +29,7 @@ control = DroneController()
     #imu.update()
     #imu.test()
 while True:
+    throttle = control.get_throttle()
     control.print_values()
+    esc.esc_speed(throttle, 5)
     time.sleep(0.5)

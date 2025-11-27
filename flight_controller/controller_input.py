@@ -74,7 +74,7 @@ class DroneController:
         return self.channels['pitch'].get_normalized(-1.0, 1.0) #get pitch value between -1 and 1
     
     def get_throttle(self):
-        return self.channels['throttle'].get_normalized(0.0, 1.0) #get throttle value between 0 and 1
+        return self.channels['throttle'].get_normalized(-1.0, 1.0) #get throttle value between 0 and 1
     
     def get_f1(self):
         return self.channels['f1'].get_normalized(-1.0,1.0) #get f1 value
