@@ -28,6 +28,10 @@ How to use:
 - Ensure the BLDC motors that are next to each other rotate in different directions
 - [Directions for Flight Computer are a work in progress]
 
+My progress so far:
+
+
+![drone](https://github.com/user-attachments/assets/f177758e-e5d2-44e2-8123-dc4d9e2fefe5)
 
 *This is a work in progress*
 
