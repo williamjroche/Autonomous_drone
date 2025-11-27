@@ -25,6 +25,8 @@ Dual Power Supply PCB:
 - 5v output goes to VSYS (Pin 39) on raspberry pi pico
 - Includes 5v and 3.3v output for versatility
 - KiCad files included since it is free and anyone can use these files
+- Gerber files, BOM, and Pick and Place files included if you just want to directly upload and buy
+  - Note: I used JLCPCB and only had them assemble the SMD components
 
 How to use:
 
