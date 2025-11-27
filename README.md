@@ -19,6 +19,13 @@ Drone Frame:
 - Due to 3D printer tolerences, some holes may not work with M3 scews, in that case I've used M2 screws with nut and lock washer
 - Make sure all screws are as tight as you can get them or you will lose strength in the frame
 
+Dual Power Supply PCB:
+- Power supply board for flight controller power
+- Uses PDB 12v pins as an input
+- 5v output goes to VSYS (Pin 39) on raspberry pi pico
+- Includes 5v and 3.3v output for versatility
+- KiCad files included since it is free and anyone can use these files
+
 How to use:
 
 
@@ -32,6 +39,7 @@ My progress so far:
 
 
 ![drone](https://github.com/user-attachments/assets/f177758e-e5d2-44e2-8123-dc4d9e2fefe5)
+
 
 *This is a work in progress*
 
