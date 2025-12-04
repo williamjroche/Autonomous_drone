@@ -10,7 +10,7 @@ This is an **ongoing project**, and the flight controller is still in developmen
 
 ---
 
-# Flight Controller
+## Flight Controller
 
 - Connects to the IMU and adjusts motor speed for flight stability using PID control  
 - Implements PID control (a feedback control system that continuously adjusts an output to reach a target value)  
