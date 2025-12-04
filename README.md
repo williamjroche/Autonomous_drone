@@ -1,42 +1,61 @@
 # Autonomous Drone
-This is an Autonomous Drone that uses Computer vision to fly with radio transmission override. This GitHub repo has two main file systems, a flight controller file system and flight computer. This is an ongoing project and the flight controller is currently in development.
 
-Flight Controller:
-- Connects to IMU and adjusts motor speed for flight stability using PID control
-- Implements PID control (a feedback control system that continuously adjusts an output to reach a target value)
-- Holds main motor control software
-- Custom Transmitter/Receiver interface program
+This is an **Autonomous Drone** project that uses **computer vision** for flight with a **radio-transmission override**.  
+The repository contains two main subsystems:
 
+- **Flight Controller**
+- **Flight Computer**
 
-Flight Computer:
-- Uses ROS2 for giving commands to the flight controller based on computer vision input
-- Holds main computer vision software
-- Interfaces with camera
+This is an **ongoing project**, and the flight controller is still in development.
 
-Drone Frame:
-- Modified STL's I found online, made to be 3D printed using PLA
-- All screw holes are designed for M3 scews, holes are not threaded so use nuts
-- Due to 3D printer tolerences, some holes may not work with M3 scews, in that case I've used M2 screws with nut and lock washer
-- Make sure all screws are as tight as you can get them or you will lose strength in the frame
+---
 
-Dual Power Supply PCB:
-- Power supply board for flight controller power
-- Uses PDB 12v pins as an input
-- 5v output goes to VSYS (Pin 39) on raspberry pi pico
-- Includes 5v and 3.3v output for versatility
-- KiCad files included since it is free and anyone can use these files
-- Gerber files, BOM, and Pick and Place files included if you just want to directly upload and buy
-  - Note: I used JLCPCB and only had them assemble the SMD components
+## Flight Controller
 
-How to use:
+- Connects to the IMU and adjusts motor speed for flight stability using PID control  
+- Implements PID control (a feedback control system that continuously adjusts an output to reach a target value)  
+- Runs the main motor-control software  
+- Includes a custom transmitter/receiver interface program  
 
+---
 
-*This repo is best used as a guide for making your own custom autonomous drone, considering the implementation is very specific to the materials I am using*
-- All files in "Flight Controller" should be downloaded to a Raspberry Pi Pico running the latest micropython
-- Use GPIO pins listed in "esc_control.py" and "controller_input.py" or change the values in the code to your needs
-- Ensure the BLDC motors that are next to each other rotate in different directions
-- [Directions for Flight Computer are a work in progress]
+## Flight Computer
 
+- Uses **ROS2** to send commands to the flight controller based on computer-vision input  
+- Contains main computer-vision software  
+- Interfaces directly with the onboard camera  
+
+---
+
+## Drone Frame
+
+- Modified STL files sourced online and optimized for **3D printing in PLA**  
+- All screw holes intended for **M3 screws** (not pre-threaded — use nuts)  
+- Due to 3D-printer tolerances, some holes may require **M2 screws with nut and lock washer**  
+- Ensure all screws are tightened **as much as possible** to avoid structural weakness  
+
+---
+
+## Dual Power Supply PCB
+
+- Provides regulated power for the flight controller  
+- Uses **PDB 12V pins** as input  
+- **5V output** connects to **VSYS (Pin 39)** on the Raspberry Pi Pico  
+- Includes both **5V and 3.3V outputs** for versatility  
+- **KiCad files included** for open access  
+- **Gerber, BOM, and Pick-and-Place files** included for quick ordering  
+  - *Designed for JLCPCB with SMD-only assembly*  
+
+---
+
+## How to Use
+
+*This repo is best used as a guide for building your own custom autonomous drone, as the implementation is specific to the materials used.*
+
+- Upload all files in the **Flight Controller** folder to a **Raspberry Pi Pico** running the latest Micropython  
+- Follow the GPIO mappings in `esc_control.py` and `controller_input.py`, or adjust as needed  
+- Ensure BLDC motors adjacent to each other rotate in **opposite directions**  
+- *Flight Computer instructions are still in progress*  
 My progress so far:
 
 
