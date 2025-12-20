@@ -15,21 +15,38 @@ imu = IMU()
 esc.esc_arm()
 
 control = DroneController()
-yaw = control.get_yaw()
-control.print_values()
-pitch = control.get_pitch()
-roll = control.get_roll()
 
-#test motor
-#esc.esc_speed(1500000, 1)
-#time.sleep(5)
-#esc.stop_motor(1)
-
-#while True:
-    #imu.update()
-    #imu.test()
 while True:
+    imu.update()
+    imu.test()
     throttle = control.get_throttle()
+    pitch = control.get_pitch()
+    roll = control.get_roll()
+    yaw = control.get_yaw()
     control.print_values()
-    esc.esc_speed(throttle, 5)
-    time.sleep(0.5)
+    
+    #copies so we don't overwrite actual values
+    roll_cmd = roll
+    pitch_cmd = pitch
+    
+    roll_correction = roll_cmd * 0.3   #30% correction
+    pitch_correction = pitch_cmd * 0.3
+    
+    #motor speed adjustment
+    motor1_speed = throttle - pitch_correction + roll_correction
+    motor2_speed = throttle - pitch_correction - roll_correction
+    motor3_speed = throttle + pitch_correction - roll_correction
+    motor4_speed = throttle + pitch_correction + roll_correction
+    
+    #convert to normalized values (-1 to 1)
+    motor1_speed = max(-1, min(1, motor1_speed))
+    motor2_speed = max(-1, min(1, motor2_speed))
+    motor3_speed = max(-1, min(1, motor3_speed))
+    motor4_speed = max(-1, min(1, motor4_speed))
+    
+    esc.esc_speed(motor1_speed, 1)
+    esc.esc_speed(motor2_speed, 2)
+    esc.esc_speed(motor3_speed, 3)
+    esc.esc_speed(motor4_speed, 4)
+    
+    time.sleep(0.02) #updates at 50Hz
