@@ -44,7 +44,7 @@ This is an **ongoing project**, and the flight controller is still in developmen
 - Includes both **5V and 3.3V outputs** for versatility  
 - **KiCad files included** for open access  
 - **Gerber, BOM, and Pick-and-Place files** included for quick ordering  
-  - *I used JLCPCB with SMD-only assembly*  
+  - *Update: I was was using JLCPCB, but my PCB order never arrived so I am now using PCBway, ETA: Feburary 14th*
 
 ---
 
