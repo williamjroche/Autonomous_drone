@@ -52,6 +52,7 @@ This is an **ongoing project**, and the flight controller is still in developmen
 
 *This repo is best used as a guide for building your own custom autonomous drone, as the implementation is specific to the materials used.*
 
+-Materials: 3D printer, PLA filament, 4 BLDC motors (I'm using 920kv DJI), 3S lipo, 4 ESC's, 1 PDB (power distribution board), radio ELRS controller, radio ELRS to PWM receiver, Raspberry Pi 5, Raspberry Pi Pico, IMU board
 - Upload all files in the **Flight Controller** folder to a **Raspberry Pi Pico** running the latest Micropython  
 - Follow the GPIO mappings in `esc_control.py` and `controller_input.py`, or adjust as needed  
 - Ensure BLDC motors adjacent to each other rotate in **opposite directions**  
