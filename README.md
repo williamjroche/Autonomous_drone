@@ -6,7 +6,7 @@ The repository contains two main subsystems:
 - **Flight Controller**
 - **Flight Computer**
 
-This is an **ongoing project**, and the flight controller is still in development.
+This is an **ongoing project**, and the flight controller is still in development. A prototype flight controller can be seen in the photo on the bottom. A more refined PCB implementation of this flight controller is in the works, named **'Atlas Flight Controller'**. This board uses the rp2350A microcontroller from Raspberry Pi, micro-usb power and data, ICM-20948 IMU chip (9-axis), 16MB flash memory (W25Q128JVS), an automatic power switching circuit for use with both external power and micro-usb power. This board will be powered by the Dual Power Supply PCB during flight which has voltage regulators for smooth and stable power delivery. 
 
 ---
 
