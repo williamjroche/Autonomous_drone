@@ -8,8 +8,6 @@ The repository contains two main subsystems:
 
 This is an **ongoing project**, and the flight controller is still in development. A prototype flight controller can be seen in the photo on the bottom. A more refined PCB implementation of this flight controller is in the works, named **'Atlas Flight Controller'**. This board uses the rp2350A microcontroller from Raspberry Pi, micro-usb power and data, ICM-20948 IMU chip (9-axis), 16MB flash memory (W25Q128JVS), an automatic power switching circuit for use with both external power and micro-usb power. This board will be powered by 5v input (from PDB) during flight which has voltage regulators for smooth and stable power delivery. 
 
----
-
 ## Flight Controller
 - Software:
   - Connects to the IMU and adjusts motor speed for flight stability using PID control  
@@ -22,15 +20,11 @@ This is an **ongoing project**, and the flight controller is still in developmen
 </p>
 This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb power and data, **ICM-20948 IMU** chip (9-axis), 16MB flash memory (W25Q128JVS), an automatic power switching circuit for use with both external power and micro-usb power. This board will be powered by 5v input (from PDB) during flight which has voltage regulators for smooth and stable power delivery. This board is still in development and has not been tested yet. The current design sports a 4-layers design, with the top and bottom for routing, second layer for GND copper pour, and the third layer for a 3.3v copper pour.
 
----
-
 ## Flight Computer
 
 - Uses **ROS2** to send commands to the flight controller based on computer-vision input  
 - Contains main computer-vision software  
 - Interfaces directly with the onboard camera  
-
----
 
 ## Dual Power Supply PCB
 
@@ -41,16 +35,12 @@ This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb pow
 - **Gerber, BOM, and Pick-and-Place files** included for quick ordering  
   - *Update: I was was using JLCPCB, but my PCB order never arrived so I am now using PCBway, ETA: Feburary 14th*
 
----
-
 ## Drone Frame
 
 - Modified STL files sourced online and optimized for **3D printing in PLA**  
 - All screw holes intended for **M3 screws** (not pre-threaded — use nuts)  
 - Due to 3D-printer tolerances, some holes may require **M2 screws with nut and lock washer**  
 - Ensure all screws are tightened **as much as possible** to avoid structural weakness  
-
----
 
 ## How to Use
 
