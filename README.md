@@ -32,24 +32,23 @@ This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb pow
 
 ---
 
+## Dual Power Supply PCB
+
+- Provides regulated power for sensors and radio receiver
+- Uses **PDB 12V pins** as input
+- Includes both **5V and 3.3V outputs** for versatility  
+- **KiCad files included** for open access  
+- **Gerber, BOM, and Pick-and-Place files** included for quick ordering  
+  - *Update: I was was using JLCPCB, but my PCB order never arrived so I am now using PCBway, ETA: Feburary 14th*
+
+---
+
 ## Drone Frame
 
 - Modified STL files sourced online and optimized for **3D printing in PLA**  
 - All screw holes intended for **M3 screws** (not pre-threaded — use nuts)  
 - Due to 3D-printer tolerances, some holes may require **M2 screws with nut and lock washer**  
 - Ensure all screws are tightened **as much as possible** to avoid structural weakness  
-
----
-
-## Dual Power Supply PCB
-
-- Provides regulated power for the flight controller  
-- Uses **PDB 12V pins** as input  
-- **5V output** connects to **VSYS (Pin 39)** on the Raspberry Pi Pico  
-- Includes both **5V and 3.3V outputs** for versatility  
-- **KiCad files included** for open access  
-- **Gerber, BOM, and Pick-and-Place files** included for quick ordering  
-  - *Update: I was was using JLCPCB, but my PCB order never arrived so I am now using PCBway, ETA: Feburary 14th*
 
 ---
 
@@ -60,8 +59,10 @@ This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb pow
 -Materials: 3D printer, PLA filament, 4 BLDC motors (I'm using 920kv DJI), 3S lipo, 4 ESC's, 1 PDB (power distribution board), radio ELRS controller, radio ELRS to PWM receiver, Raspberry Pi 5, Raspberry Pi Pico, IMU board
 - Upload all files in the **Flight Controller** folder to a **Raspberry Pi Pico** running the latest Micropython  
 - Follow the GPIO mappings in `esc_control.py` and `controller_input.py`, or adjust as needed  
-- Ensure BLDC motors adjacent to each other rotate in **opposite directions**  
-- *Flight Computer instructions are still in progress*  
+- Ensure BLDC motors adjacent to each other rotate in **opposite directions**
+- Optional: order dual channel power distribution board for smooth and effecient power
+- *Flight Computer instructions are still in progress*
+
 My progress so far:
 
 
