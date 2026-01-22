@@ -6,17 +6,21 @@ The repository contains two main subsystems:
 - **Flight Controller**
 - **Flight Computer**
 
-This is an **ongoing project**, and the flight controller is still in development. A prototype flight controller can be seen in the photo on the bottom. A more refined PCB implementation of this flight controller is in the works, named **'Atlas Flight Controller'**. This board uses the rp2350A microcontroller from Raspberry Pi, micro-usb power and data, ICM-20948 IMU chip (9-axis), 16MB flash memory (W25Q128JVS), an automatic power switching circuit for use with both external power and micro-usb power. This board will be powered by the Dual Power Supply PCB during flight which has voltage regulators for smooth and stable power delivery. 
+This is an **ongoing project**, and the flight controller is still in development. A prototype flight controller can be seen in the photo on the bottom. A more refined PCB implementation of this flight controller is in the works, named **'Atlas Flight Controller'**. This board uses the rp2350A microcontroller from Raspberry Pi, micro-usb power and data, ICM-20948 IMU chip (9-axis), 16MB flash memory (W25Q128JVS), an automatic power switching circuit for use with both external power and micro-usb power. This board will be powered by 5v input (from PDB) during flight which has voltage regulators for smooth and stable power delivery. 
 
 ---
 
 ## Flight Controller
-
-- Connects to the IMU and adjusts motor speed for flight stability using PID control  
-- Implements PID control (a feedback control system that continuously adjusts an output to reach a target value)  
-- Runs the main motor-control software  
-- Includes a custom transmitter/receiver interface program  
-
+- Software:
+  - Connects to the IMU and adjusts motor speed for flight stability using PID control  
+  - Implements PID control (a feedback control system that continuously adjusts an output to reach a target value)  
+  - Runs the main motor-control software  
+  - Includes a custom transmitter/receiver interface program
+-ATLAS Flight Controller v0.4:
+<p align='center'>
+  <img width="616" height="543" alt="atlas_flight_controller_pcb_3dview_v0 4" src="https://github.com/user-attachments/assets/00be44f1-7915-45f0-9d37-b59575feddfb" />
+</p>
+This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb power and data, **ICM-20948 IMU** chip (9-axis), 16MB flash memory (W25Q128JVS), an automatic power switching circuit for use with both external power and micro-usb power. This board will be powered by 5v input (from PDB) during flight which has voltage regulators for smooth and stable power delivery. 
 ---
 
 ## Flight Computer
