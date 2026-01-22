@@ -17,7 +17,7 @@ This is an **ongoing project**, and the flight controller is still in developmen
 - ATLAS Flight Controller v0.4:
 
 <p align='center'>
-  <img width="898" height="811" alt="atlas_flight_controller_pcb_3dview_v0 4" src="https://github.com/user-attachments/assets/9087c51c-edc1-4f96-96cb-7165504e71e9" />
+  <img width="798" height="711" alt="atlas_flight_controller_pcb_3dview_v0 4" src="https://github.com/user-attachments/assets/9087c51c-edc1-4f96-96cb-7165504e71e9" />
 </p>
 
 This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb power and data, **ICM-20948 IMU** chip (9-axis), 16MB flash memory (W25Q128JVS), an automatic power switching circuit for use with both external power and micro-usb power. This board will be powered by 5v input (from PDB) during flight which has voltage regulators for smooth and stable power delivery. This board is still in development and has not been tested yet. The current design sports a **4-layer** design, with the top and bottom for routing, second layer for GND copper pour, and the third layer for a 3.3v copper pour.
