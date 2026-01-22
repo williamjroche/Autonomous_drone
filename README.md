@@ -16,7 +16,7 @@ This is an **ongoing project**, and the flight controller is still in developmen
   - Implements PID control (a feedback control system that continuously adjusts an output to reach a target value)  
   - Runs the main motor-control software  
   - Includes a custom transmitter/receiver interface program
--ATLAS Flight Controller v0.4:
+- ATLAS Flight Controller v0.4:
 <p align='center'>
   <img width="616" height="543" alt="atlas_flight_controller_pcb_3dview_v0 4" src="https://github.com/user-attachments/assets/00be44f1-7915-45f0-9d37-b59575feddfb" />
 </p>
