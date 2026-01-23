@@ -1,4 +1,4 @@
-27148088399615706
+27151626634696449
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -107568,6 +107568,20 @@ FUSE_4527
 0
 2
 2
+custom_footprint
+LED_CMD15-21_VCC
+
+CMD15-21VGD/TR8 
+0
+2
+2
+custom_footprint
+LGA10_2.0X2.0X0.95_BOS
+
+BMP384 
+0
+10
+10
 custom_footprint
 QFN40P300X300X105-24N
 

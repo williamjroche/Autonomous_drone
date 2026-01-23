@@ -1,0 +1,9 @@
+(version 1)
+(rule "IMU_pad_clearance"
+	(condition "A.intersectsArea('IMU_fab')")
+	(constraint clearance (min 0.10mm))
+)
+(rule "MCU_pad_clearance"
+	(condition "A.intersectsArea('MCU_fab')")
+	(constraint clearance (min 0.10mm))
+)
