@@ -30,6 +30,10 @@ This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb pow
 
 ## Dual Power Supply PCB
 
+<p align='center'>
+  <img width="662" height="417" alt="image" src="https://github.com/user-attachments/assets/f2267e4d-806f-4f32-a5cb-de38a164c665" />
+</p>
+
 - Provides regulated power for sensors and radio receiver
 - Uses **PDB 12V pins** as input
 - Includes both **5V and 3.3V outputs** for versatility  
