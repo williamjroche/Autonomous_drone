@@ -36,10 +36,12 @@ This board uses the **RP2350A** microcontroller from Raspberry Pi, micro-usb pow
 
 - Provides regulated power for sensors and radio receiver
 - Uses **PDB 12V pins** as input
-- Includes both **5V and 3.3V outputs** for versatility  
+- Includes both **5V and 3.3V outputs** for versatility
+  - After testing the manufactured power supply, it works as expected. 12v goes into the input side, can turn each channel on or off using the blue switches.
+  - 5v and 3.3v are extremely accurate and stable.
+  - Minimal heat produced.
 - **KiCad files included** for open access  
-- **Gerber, BOM, and Pick-and-Place files** included for quick ordering  
-  - *Update: I was was using JLCPCB, but my PCB order never arrived so I am now using PCBway, ETA: Feburary 14th*
+- **Gerber, BOM, and Pick-and-Place files** included for quick ordering
 
 ## Drone Frame
 
