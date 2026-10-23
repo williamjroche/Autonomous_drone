@@ -1,6 +1,6 @@
 # Autonomous Drone
 
-This is a GPS-Denied **Autonomous Drone** project that uses **computer vision** for flight with a **radio-transmission override**.  
+This is a GPS-Denied **Drone** project that hopefully in the future uses **computer vision** for flight.  
 The repository contains two main subsystems:
 
 - **Flight Controller**
